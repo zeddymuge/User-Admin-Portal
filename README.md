@@ -1,4 +1,4 @@
-## live view : https://zeddymuge.github.io/User-Admin-Portal/users
+## live view : https://zeddymuge.github.io/User-Admin-Portal
 # Angular User Management Dashboard
 
 ## Objective
