@@ -1,0 +1,68 @@
+.user-form {
+    *{
+        padding: 10px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+  
+    form {
+      display: flex;
+      flex-direction: column;
+  
+      .form-group {
+        margin-bottom: 20px;
+  
+        label {
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+  
+        input[type="text"],
+        input[type="email"] {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          font-size: 16px;
+          transition: border-color 0.3s ease-in-out;
+  
+          &:focus {
+            border-color: #007bff;
+            outline: none;
+          }
+        }
+  
+        div {
+          color: #a31a28;
+          font-size: 14px;
+          margin-top: 5px;
+        }
+      }
+  
+      .form-actions {
+        button {
+          background-color:#007bff;
+          color: #fff;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          
+  
+          &:hover {
+            background-color: #0056b3;
+          }
+        }
+      }
+
+     
+          .btn{
+            margin-left: 10px;
+          }
+        
+    }
+  }
+  

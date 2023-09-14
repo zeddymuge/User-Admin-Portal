@@ -1,0 +1,33 @@
+<div class="user-form">
+    <h2>{{ editMode ? 'Edit User' : 'Add User' }}</h2>
+    <form (submit)="submitForm()">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" [(ngModel)]="user.name" required>
+            <div *ngIf="userForm.controls['name'].invalid && userForm.controls['name'].touched">
+              Name is required.
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" [(ngModel)]="user.email" required>
+            <div *ngIf="userForm.controls['email'].hasError('email') && userForm.controls['email'].touched">
+              Invalid email format.
+            </div>
+          </div>
+          
+      <div class="form-group">
+        <label for="role">Role:</label>
+        <input type="text" id="role" name="role" [(ngModel)]="user.role" required>
+        <div *ngIf="userForm.controls['role'].invalid && userForm.controls['role'].touched">
+            role is required.
+          </div>
+      </div>
+      <div class="form-actions">
+        <button type="submit">{{ editMode ? 'Update' : 'Add' }}</button>
+        <button type="button" class="btn" (click)="goBack()">Cancel</button>
+      </div>
+    
+    </form>
+  </div>
